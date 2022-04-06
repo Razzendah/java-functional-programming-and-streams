@@ -28,6 +28,12 @@ public class FP02Functional {
 		System.out.println("- - - - - - -Sorted Reverse Order - - - - - - - - - - - ");
 		courses.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
 
+		System.out.println("- - - - - - -Distinct Sorted - - - - - - - - - - - ");
+		numbers.stream()
+				.distinct()
+				.sorted()
+				.forEach(System.out::println);
+
 		System.out.println("- - - - - - -Compare the str length - - - - - - - - - - - ");
 		courses.stream().sorted(Comparator.comparing(str -> str.length())).forEach(System.out::println);
 
